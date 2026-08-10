@@ -46,17 +46,19 @@ Cinco áreas da vida costumam morar em cinco apps diferentes. Este projeto junta
 
 O front-end nunca toca no banco diretamente sem passar pela sessão autenticada, e as regras de acesso vivem no próprio banco, não no código do cliente.
 
+
 ```mermaid
 flowchart LR
-    U([👩 Yaz]) -->|e-mail + senha| A[React + Vite <br/>hospedado na Vercel]
-    A <-->|sessão autenticada| B[Supabase Auth]
-    A <-->|leitura e escrita| C[(PostgreSQL)]
-    C -.->|Row Level Security<br/>auth.uid = user_id| C
+    U(["👩 Yaz"]) -->|"e-mail + senha"| A["React + Vite<br/>na Vercel"]
+    A <-->|"sessão autenticada"| B["Supabase Auth"]
+    A <-->|"leitura e escrita"| C[("PostgreSQL")]
+    C -.->|"Row Level Security:<br/>cada linha pertence<br/>a um usuário"| C
     style A fill:#8B6FC7,color:#fff,stroke:#B79CED
     style B fill:#3ECF8E,color:#000,stroke:#3ECF8E
     style C fill:#A9B15E,color:#000,stroke:#A9B15E
     style U fill:#B79CED,color:#000,stroke:#B79CED
 ```
+
 
 Cada área do hub é persistida como um documento JSON por seção, ligado ao `user_id`. Esse formato deixa a evolução de funcionalidades barata: adicionar um campo novo não exige migração de schema.
 
