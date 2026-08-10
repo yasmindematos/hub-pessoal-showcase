@@ -1,4 +1,4 @@
-# 💜 Hub Pessoal — projeto privado
+# 💜 Hub pessoal — projeto privado
 
 > Repositório de vitrine. O código-fonte e o site ficam em ambiente privado por conterem dados pessoais.
 
