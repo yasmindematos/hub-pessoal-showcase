@@ -2,6 +2,9 @@
 
 > Repositório de vitrine. O código-fonte e o site ficam em ambiente privado por conterem dados pessoais.
 
+<img width="1599" height="920" alt="image" src="https://github.com/user-attachments/assets/8971dcd4-d9b5-4dd6-b2ec-f4882d281dcc" />
+
+
 ## O que é
 
 Um web app pessoal de organização de vida que centraliza, em um só lugar:
@@ -11,6 +14,9 @@ Um web app pessoal de organização de vida que centraliza, em um só lugar:
 - 📚 **Estudos**: cursos e MBA organizados em matérias, cada uma com anotações datadas e links de referência com prévia automática de imagens e vídeos
 - 💼 **Trabalho**: tarefas por produto com status, anotações de reuniões e biblioteca de links úteis
 - 🫶 **Diário de sentimentos**: registro de humor com escala visual e texto livre
+
+<img width="914" height="167" alt="image" src="https://github.com/user-attachments/assets/06ca1b19-7ac0-4efd-90ac-75af822ad0a7" />
+
 
 ## Stack
 
